@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - Hijab Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #babc60; /* Ubah warna latar belakang */
+        }
+        
+        header {
+            background-color: #e7e2b1; /* Ubah warna latar belakang header */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none; /* Menghilangkan bullet point */
+            padding: 0; /* Menghilangkan padding */
+            margin: 0; /* Menghilangkan margin */
+        }
+
+        nav ul li {
+            display: inline; /* Menampilkan item dalam satu baris */
+            margin-right: 15px; /* Jarak antar item */
+        }
+
+        nav a {
+            text-decoration: none; /* Menghilangkan garis bawah */
+            color: white; /* Warna tautan */
+            transition: color 0.3s; /* Transisi warna saat hover */
+        }
+
+        nav a:hover {
+            color: #f7f7f7; /* Warna saat hover */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        .product-info {
+            max-width: 400px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: #a7ae51; /* Ubah warna latar belakang tombol */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #e7e193; /* Ubah warna saat hover */
+        }
+        
+        .action-buttons {
+            margin-top: 10px;
+        }
+        
+        .action-buttons button {
+            margin-right: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e2e8f0; /* Ubah warna latar belakang footer */
+            color: #4a5568; /* Ubah warna teks footer */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hijab Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Detail Produk</h2>
+        <div class="product">
+            <img src="hijab satin.jpg" alt="pashmina">
+            <div class="product-info">
+                <h3>Hijab Satin</h3>
+                <p>Hijab satin lembut, ideal untuk tampilan elegan.</p>
+                <p><strong>Harga:</strong> Rp 80.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="hijab kaos.jpg" alt="Hijab Pashmina">
+            <div class="product-info">
+                <h3>Hijab kaos</h3>
+                <p>Pashmina yang mudah dibentuk, cocok untuk sehari-hari.</p>
+                <p><strong>Harga:</strong> Rp 70.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="produk ciput.jpg" alt="Ciput">
+            <div class="product-info">
+                <h3>Ciput</h3>
+                <p>Ciput berkualitas tinggi yang nyaman digunakan.</p>
+                <p><strong>Harga:</strong> Rp 50.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="manset2.jpg" alt="Manset">
+            <div class="product-info">
+                <h3>Manset</h3>
+                <p>Manset yang stylish dan elastis.</p>
+                <p><strong>Harga:</strong> Rp 30.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="hijab cashmare.jpg" alt="Hijab Cashmere">
+            <div class="product-info">
+                <h3>Hijab Cashmere</h3>
+                <p>Hijab cashmere lembut dan hangat.</p>
+                <p><strong>Harga:</strong> Rp 90.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="hijab syiria.jpg" alt="Hijab Syiria">
+            <div class="product-info">
+                <h3>Hijab Syiria</h3>
+                <p>Hijab syiria yang mudah dibentuk untuk tampilan anggun.</p>
+                <p><strong>Harga:</strong> Rp 85.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="hijab syari.jpg" alt="Hijab Syari">
+            <div class="product-info">
+                <h3>Hijab Syari</h3>
+                <p>Hijab syari yang panjang dan menutup aurat.</p>
+                <p><strong>Harga:</strong> Rp 100.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="hijab volie.jpg" alt="Hijab Voile">
+            <div class="product-info">
+                <h3>Hijab Voile</h3>
+                <p>Hijab voile ringan dan nyaman untuk dipakai sehari-hari.</p>
+                <p><strong>Harga:</strong> Rp 65.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+                <div class="action-buttons">
+                    <button onclick="likeProduct()">Like</button>
+                    <button onclick="reviewProduct()">Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hijab Store</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            alert("Produk telah ditambahkan ke keranjang!");
+        }
+
+        function likeProduct() {
+            alert("Anda telah menyukai produk ini!");
+        }
+
+        function reviewProduct() {
+            const review = prompt("Silakan tulis ulasan Anda:");
+            if (review) {
+                alert("Ulasan Anda telah disimpan!");
+            }
+        }
+    </script>
+</body>
+
+</html>

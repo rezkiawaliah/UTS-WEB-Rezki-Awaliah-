@@ -1,0 +1,225 @@
+/* index.css */
+
+/* CSS untuk body dan elemen umum */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #dad1b6; /* Warna latar belakang header */
+    padding: 20px; /* Padding header */
+    text-align: center; /* Memusatkan teks di header */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgb(196, 155, 120);
+    color: white;
+}
+
+/* index.css */
+
+/* CSS untuk body dan elemen umum */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #d6b75a; /* Warna latar belakang header */
+    padding: 20px; /* Padding header */
+    text-align: center; /* Memusatkan teks di header */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgb(196, 155, 120);
+    color: white;
+}
+
+.model-gallery {
+    width: 40%; /* Mengatur lebar model gallery menjadi 100% */
+    overflow-x: auto; /* Mengizinkan scroll horizontal */
+    white-space: nowrap; /* Mencegah elemen dalam satu baris */
+    padding: 10px 0; /* Tambahkan padding vertikal untuk ruang di sekeliling */
+}
+
+.scroll-container {
+    display: inline-flex; /* Menggunakan inline-flex untuk mencegah baris baru */
+}
+
+.model {
+    display: inline-block; /* Membuat setiap model menjadi blok inline */
+    width: 50px; /* Ubah lebar untuk ukuran sedang */
+    margin: 0 10px; /* Jarak antar model */
+    transition: transform 0.3s; /* Animasi halus untuk transformasi */
+}
+
+.model img {
+    width: 10%; /* Mengatur lebar gambar menjadi 100% dari elemen model */
+    height: 10px; /* Menetapkan tinggi untuk menjaga konsistensi */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border-radius: 5px; /* Untuk konsistensi dengan gambar */
+}
+
+
+.product-container {
+    margin-top: 20px; /* Jarak antara model gallery dan produk */
+}
+
+.product-container h2 {
+    background-color: #a3993a; /* Warna latar belakang */
+    padding: 15px; /* Padding untuk judul produk */
+    text-align: center; /* Memusatkan teks */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+.product-container .scroll-container {
+    display: flex;
+    overflow-x: auto; /* Membolehkan scroll horizontal */
+    padding: 20px; /* Padding untuk ruang di sekeliling gambar */
+}
+
+.product {
+    flex: 0 0 auto; /* Mengatur ukuran item agar tidak menyusut */
+    margin-right: 15px;
+    text-align: center; /* Memusatkan teks */
+    background-color: #f9f9f9; /* Warna latar belakang untuk produk */
+    padding: 10px; /* Padding untuk produk */
+    border-radius: 5px; /* Sudut membulat */
+    transition: transform 0.3s; /* Animasi halus untuk transformasi */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Membesarkan elemen saat di-hover */
+}
+
+.product img {
+    width: 700px; /* Ukuran gambar produk */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 5px; /* Sudut membulat untuk gambar */
+    
+}
+
+.view-all-btn {
+    display: block;
+    margin: 20px auto; /* Memusatkan tombol */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn {
+    background-color: #b7b071; /* Warna latar belakang tombol */
+    color: rgb(123, 116, 64); /* Warna teks tombol */
+    padding: 10px 20px; /* Padding untuk tombol */
+    border-radius: 5px; /* Sudut membulat untuk tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    display: inline-block; /* Agar padding berfungsi dengan baik */
+}
+
+.btn:hover {
+    background-color: #c4bb8b; /* Warna latar belakang saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0; /* Warna latar belakang footer */
+}
+
+
+
+.product-container {
+    margin-top: 20px; /* Jarak antara model gallery dan produk */
+}
+
+.product-container h2 {
+    background-color: #a3993a; /* Warna latar belakang */
+    padding: 15px; /* Padding untuk judul produk */
+    text-align: center; /* Memusatkan teks */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+.product-container .scroll-container {
+    display: flex;
+    overflow-x: auto; /* Membolehkan scroll horizontal */
+    padding: 20px; /* Padding untuk ruang di sekeliling gambar */
+}
+
+.product {
+    flex: 0 0 auto; /* Mengatur ukuran item agar tidak menyusut */
+    margin-right: 15px;
+    text-align: center; /* Memusatkan teks */
+    background-color: #f9f9f9; /* Warna latar belakang untuk produk */
+    padding: 10px; /* Padding untuk produk */
+    border-radius: 5px; /* Sudut membulat */
+    transition: transform 0.3s; /* Animasi halus untuk transformasi */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Membesarkan elemen saat di-hover */
+}
+
+.product img {
+    width: 200px; /* Ukuran gambar produk */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 5px; /* Sudut membulat untuk gambar */
+
+}
+
+.view-all-btn {
+    display: block;
+    margin: 20px auto; /* Memusatkan tombol */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn {
+    background-color: #b7b071; /* Warna latar belakang tombol */
+    color: rgb(123, 116, 64); /* Warna teks tombol */
+    padding: 10px 20px; /* Padding untuk tombol */
+    border-radius: 5px; /* Sudut membulat untuk tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    display: inline-block; /* Agar padding berfungsi dengan baik */
+}
+
+.btn:hover {
+    background-color: #c4bb8b; /* Warna latar belakang saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0; /* Warna latar belakang footer */
+}

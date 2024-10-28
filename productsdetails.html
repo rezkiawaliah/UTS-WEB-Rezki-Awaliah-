@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Hijab Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS untuk penataan tabel dan formulir */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Background untuk seluruh halaman */
+        }
+
+        header {
+            background-color: #c2c08b; /* Warna background header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h2 {
+            background-color: #e4dea9; /* Background untuk judul */
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #968946;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: hsl(58, 64%, 81%);
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #9c9c79;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d8ba72;
+        }
+
+        img {
+            width: 50px; /* Ukuran gambar produk */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .add-product {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hijab Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="products">
+        <div class="container">
+            <h2>Produk Kami</h2>
+            <table>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Nama Produk</th>
+                    <th>Stok</th>
+                </tr>
+                <tr>
+                    <td><img src="produk ciput.jpg" alt="Ciput"></td>
+                    <td>Ciput</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td><img src="manset.jpg" alt="Manset"></td>
+                    <td>Manset</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td><img src="hijab satin.jpg" alt="Hijab Satin"></td>
+                    <td>Hijab Satin</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td><img src="pashmina.jpg" alt="Hijab Pashmina"></td>
+                    <td>Hijab Pashmina</td>
+                    <td>25</td>
+                </tr>
+            </table>
+            <div class="add-product">
+                <button onclick="window.location.href='add-product.html'">Tambah Produk</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Hijab Store</p>
+    </footer>
+</body>
+
+</html>

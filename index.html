@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hijab Store</title>
+    <link rel="stylesheet" href="css/index.css"> <!-- Link ke file CSS -->
+    <style>
+        header {
+            background-color: #dad1b6;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .login-signup {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .login-signup a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #000;
+            padding: 10px 15px;
+            border: 1px solid #b7b071;
+            border-radius: 5px;
+        }
+
+        .login-signup a:hover {
+            background-color: #c4bb8b;
+        }
+
+        nav ul {
+            list-style-type: none; /* Menghilangkan bullet point */
+            padding: 0; /* Menghilangkan padding */
+            margin: 0; /* Menghilangkan margin */
+        }
+
+        nav ul li {
+            display: inline; /* Menampilkan item dalam satu baris */
+            margin-right: 15px; /* Jarak antar item */
+        }
+
+        nav a {
+            text-decoration: none; /* Menghilangkan garis bawah */
+            color: #b7b071; /* Warna tautan */
+            transition: color 0.3s; /* Transisi warna saat hover */
+        }
+
+        nav a:hover {
+            color: #c4bb8b; /* Warna saat hover */
+        }
+
+        /* Sisa gaya CSS Anda di sini... */
+
+        .model {
+            transition: transform 0.3s;
+            flex: 0 0 100%;
+            margin: 0;
+        }
+
+        .model:hover {
+            transform: scale(1.05);
+        }
+
+        .model img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .scroll-container {
+            display: flex;
+            overflow-x: hidden;
+        }
+
+        .model-gallery h2 {
+            background-color: #a3993a;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        .btn {
+            background-color: #b7b071;
+            color: rgb(123, 116, 64);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #c4bb8b;
+        }
+
+        .product {
+            transition: transform 0.3s;
+            margin: 0 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .view-all-btn {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sunflower Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="productsdetails.html">Detail</a></li>
+
+            </ul>
+        </nav>
+        <div class="login-signup">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </header>
+    <section class="product-container">
+        <h2 style="background-color: #a3993a; padding: 15px; text-align: center; border-radius: 5px;">Sunflower Store</h2>
+        <div class="scroll-container">
+            <div class="product">
+                <img src="pict1.jpeg" alt="Hijab 1" style="width: 300px; height: auto;">
+            </div>
+            <div class="product">
+                <img src="pict2.jpeg" alt="Hijab 2" style="width: 300px; height: auto;">
+            </div>
+            <div class="product">
+                <img src="pict3.jpg" alt="Ciput Comfort" style="width: 300px; height: auto;">
+            </div>
+            <div class="product">
+                <img src="pict7.jpg" alt="Hijab 4" style="width: 300px; height: auto;">
+            </div>
+            <div class="product">
+                <img src="pict5.jpg" alt="Hijab 5" style="width: 300px; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <section class="product-container">
+        <h3 style="background-color: #a3993a; padding: 15px; text-align: center; border-radius: 5px;">Produk Hijab</h3>
+        <div class="scroll-container">
+            <div class="product">
+                <img src="produk1.jpg" alt="Hijab 1">
+                <h3>Pashmina Elegan</h3>
+                <p>Harga: Rp. 150.000</p>
+            </div>
+            <div class="product">
+                <img src="aurahijab1.jpg" alt="Hijab 2">
+                <h3>Pashmina Casual</h3>
+                <p>Harga: Rp. 120.000</p>
+            </div>
+            <div class="product">
+                <img src="hijab2.jpg" alt="Hijab 3">
+                <h3>Pashmina Glamour</h3>
+                <p>Harga: Rp. 85.000</p>
+            </div>
+            <div class="product">
+                <img src="hijab3.jpg" alt="Ciput Comfort">
+                <h3>Pashmina Classic</h3>
+                <p>Harga: Rp. 80.000</p>
+            </div>
+            <div class="product">
+                <img src="hijab4.jpg" alt="Hijab 4">
+                <h3>Pashmina Printed</h3>
+                <p>Harga: Rp. 160.000</p>
+            </div>
+            <div class="product">
+                <img src="hijab5.jpg" alt="Hijab 5">
+                <h3>Pashmina Instan</h3>
+                <p>Harga: Rp. 90.000</p>
+            </div>
+            <div class="product">
+                <img src="ciput.jpg" alt="Ciput">
+                <h3>Ciput</h3>
+                <p>Harga: Rp. 40.000</p>
+            </div>
+            <div class="product">
+                <img src="manset.jpg" alt="Manset">
+                <h3>Manset</h3>
+                <p>Harga: Rp. 50.000</p>
+            </div>
+        </div>
+        <div class="view-all-btn">
+            <a href="products.html" class="btn">Lihat Semua Produk >> </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hijab Store</p>
+    </footer>
+</body>
+
+</html>

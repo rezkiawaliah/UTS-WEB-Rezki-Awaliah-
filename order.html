@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Hijab Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #541c1c;
+            background-image: url('background2.jpg');
+        }
+        
+        header {
+            background-color: #eadab2;
+            color: rgb(125, 53, 53);
+            padding: 10px 20px;
+            text-align: center;
+        }
+        
+        .container {
+            padding: 20px;
+            max-width: 400px;
+            /* Adjusted width for a more compact form */
+            margin: auto;
+            /* Slightly transparent background */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(238, 231, 231, 0.1);
+            margin-top: 50px;
+            /* Add space from top */
+            background-size: cover;
+            /* Cover the entire area */
+            background-position: center;
+            /* Center the image */
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            /* Make labels bold */
+        }
+        
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: #807348;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            /* Increase font size for button */
+        }
+        
+        button:hover {
+            background-color: #f5e6b2;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Checkout - Hijab Store</h1>
+    </header>
+    <div class="container">
+        <h2>Isi Informasi Pembelian</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat Pengiriman:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Metode Pembayaran:</label>
+                <select id="payment" name="payment" required>
+                <option value="transfer">Transfer Bank</option>
+                <option value="credit-card">Kartu Kredit</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            </div>
+            <button type="submit">Konfirmasi Pembelian</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hijab Store</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hijab Store</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('pict4.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        header {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Mengurangi jarak antar item */
+        }
+
+        nav ul li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin-top: 100px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #9b9250;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #9b9250;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #7c7465;
+            text-decoration: none; /* Menghilangkan garis bawah */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Menambahkan garis bawah saat hover */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hijab Store</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Home</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="products.html">Produk</a>
+            </li>
+            <li>
+                <a href="order.html">Order</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            </li>
+        </ul>
+    </nav>
+    
+    <section id="login">
+        <div class="container">
+            <h2>Login</h2>
+            <form action="index.html" method="post"> <!-- Mengarahkan ke halaman home -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Masuk</button>
+                <p>Belum punya akun? <a href="signup.html">Daftar di sini</a></p>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Hijab Store</p>
+    </footer>
+</body>
+
+</html>
